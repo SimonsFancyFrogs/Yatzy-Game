@@ -1,6 +1,6 @@
 # My Yatzy Game
 
-This is a simple browser-based Yatzy game that you can play online.
+This is a simple browser-based Yatzy game.
 
 ## How to Play
 
