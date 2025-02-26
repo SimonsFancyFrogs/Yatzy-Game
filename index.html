@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Yatzy Game</title>
+    <style>
+      /* CSS Styles for the Yatzy Game */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f7fa;
+        padding: 20px;
+      }
+      .player-turn {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .dice-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      .die {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #666;
+        background: #fff;
+        border-radius: 4px;
+        font-size: 24px;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .die.selected {
+        background: #dcdcdc;
+      }
+      #roll-button,
+      #start-game {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+      }
+      #scoreboard-area {
+        margin-top: 20px;
+      }
+      .excel-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .excel-table th,
+      .excel-table td {
+        border: 1px solid #999;
+        padding: 5px 8px;
+        text-align: center;
+      }
+      .excel-table th {
+        background-color: #d0e4f5;
+      }
+      .ark {
+        color: red;
+      }
+      .read-only {
+        background-color: #e9ecef;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="start-game">Start Game</button>
+      <button id="roll-button" style="display: none;">Roll Dice</button>
+    </div>
+    <div id="game-area"></div>
+    <div id="scoreboard-area"></div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
